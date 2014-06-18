@@ -34,18 +34,18 @@ grails.project.dependency.resolution = {
         runtime 'mysql:mysql-connector-java:5.1.27'
     }
 
+
     plugins {
         // plugins for the build system only
-        build ":tomcat:7.0.52.1"
-
+        build ':tomcat:7.0.52.1'
         // plugins for the compile step
-        compile ":scaffolding:2.0.3"
-        compile ':cache:1.1.2'
+        compile ':scaffolding:2.1.0'
+        compile ':cache:1.1.3'
+        compile ':asset-pipeline:1.8.3'
 
         // plugins needed at runtime but not for compilation
-        runtime ":hibernate:3.6.10.13" // or ":hibernate4:4.3.5.1"
-        runtime ":database-migration:1.4.0"
-
+        runtime ':hibernate4:4.3.5.2' // or ':hibernate:3.6.10.14'
+        runtime ':database-migration:1.4.0'
 
         compile ":build-test-data:2.1.2"
         compile ":console:1.3"
