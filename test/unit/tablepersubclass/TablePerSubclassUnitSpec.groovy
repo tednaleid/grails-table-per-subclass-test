@@ -1,8 +1,12 @@
 package tablepersubclass
 
+import grails.buildtestdata.mixin.Build
+import grails.test.mixin.TestFor
 import spock.lang.Specification
 
-class TablePerSubclassSpec extends Specification {
+@TestFor(Person)
+@Build([Organization, Person, Programmer, Teacher, Student])
+class TablePerSubclassUnitSpec extends Specification {
 
     Person person
     Programmer programmer
